@@ -1,7 +1,5 @@
 version: '3.7'
-​
 services:
-​
   db:
     image: mysql:5.7
     volumes:
@@ -14,11 +12,9 @@ services:
         MYSQL_DATABASE: test
         MYSQL_USER: test
         MYSQL_PASSWORD: test123
-  
   jupyter:
     image: jupyter/base-notebook
     ports:
       - 8888:8888
-  
 volumes:
   db_data:
